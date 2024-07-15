@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Chat with MySQL{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static\css\style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='static\css\images\favicon.ico') }}">
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Chat with MySQL{% endblock %}</h1>
+    </header>
+    <main>
+        <aside>
+            <button id="connect-btn">Connect</button>
+            <button id="history-btn">History</button>
+        </aside>
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='static\css\js\script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Connect to Database{% endblock %}
+
+{% block content %}
+<div id="connect-form-container">
+    <form id="connect-form">
+        <label for="host">Host:</label>
+        <input type="text" id="host" name="host" required>
+        <label for="port">Port:</label>
+        <input type="text" id="port" name="port" required>
+        <label for="user">User:</label>
+        <input type="text" id="user" name="user" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="database">Database:</label>
+        <input type="text" id="database" name="database" required>
+        <button type="submit">Connect</button>
+    </form>
+</div>
+{% endblock %}

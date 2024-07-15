@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    background-color: #000080;
+    padding: 1em;
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+aside button {
+    background-color: #ffffff;
+    color: #000080;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+aside button:hover {
+    background-color: #cccccc;
+}
+
+section {
+    flex-grow: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#connect-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 2em;
+    background-color: #262626;
+    border-radius: 8px;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1a1aff;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 1em;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #262626;
+}
+
+#chat-messages {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#chat-input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#send-btn,
+#mic-btn {
+    padding: 0.5em 1em;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-btn:hover,
+#mic-btn:hover {
+    background-color: #1a1aff;
+}
+
+#mic-btn img {
+    width: 20px;
+    height: 20px;
+}
