@@ -79,9 +79,4 @@ cd your_flask_app
 pip install -r requirements.txt
 ```
 
-3. Access the application in your web browser:
-
-```bash
-http://localhost:5000
-```
 
